@@ -21,7 +21,7 @@ The **Autistic Skating Group** is a community of skaters who meet every Tuesday 
 ## Schedule & Location
 | Day      | Time (Local) | Venue                |
 |----------|--------------|----------------------|
-| Tuesday  | 06:50 AM – 07:45 AM | Terwiliger Edmonmon |
+| Tuesday  | 06:50 AM – 07:45 AM | Booster Juice Recreation Centre in Terwillegar (Edmonton) (Rink C) |
 
 ## Competitions & Judges
 We organize small‑scale competitions that pit our skaters against each other and against neighboring clubs. Below is a list of current competitors and their home clubs:
