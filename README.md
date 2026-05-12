@@ -93,7 +93,7 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for f
 
 ## Contact & Support
 - **Project Owner:** `math-12393`
-- **Email:** (add your contact email here)
+- **Email:** (wen471942@gmail.com)
 - **Issues:** Use the GitHub Issues tab to report bugs or request features.
 
 ---
