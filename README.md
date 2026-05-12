@@ -31,7 +31,7 @@ We organize small‑scale competitions that pit our skaters against each other a
 | **Wenrui Zhang** | Ice Palace FSC     |
 | **Eason Xie**    | Derrick FSC        |
 | **Simon Chen**   | Derrick FSC        |
-| **Sian**         | Mayfield FSC       |
+| **Sian Chen (Autistic)**         | Mayfield FSC       |
 
 All events are judged according to the **ISU judging system**, ensuring fairness and consistency across all performances.
 
