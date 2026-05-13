@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autistic Figure Skating Club | Inclusive Free Skating Every Tuesday</title>
+  <meta name="description" content="Free inclusive figure skating club for autistic athletes. Every Tuesday 6:45 AM at Booster Juice Recreation Centre, Rink C. All levels welcome. Made for fun!">
+  <meta name="keywords" content="autistic skating, figure skating club, inclusive sports, Edmonton skating, free skating lessons, Terwillegar skating">
+  <meta name="author" content="Autistic Figure Skating Club">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://math-12393.github.io/Autistic-Skating-Group/">
+  <meta property="og:title" content="Autistic Figure Skating Club">
+  <meta property="og:description" content="Free inclusive figure skating every Tuesday 6:45 AM. All levels, all ages. Made for fun!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://math-12393.github.io/Autistic-Skating-Group/">
+  <meta property="og:image" content="https://math-12393.github.io/Autistic-Skating-Group/assets/og-image.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Autistic Figure Skating Club">
+  <meta name="twitter:description" content="Free inclusive figure skating every Tuesday 6:45 AM. All levels welcome. Made for fun!">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main id="main-content">
+    <div id="hero"></div>
+    <div id="about"></div>
+    <div id="mission"></div>
+    <div id="programs"></div>
+    <div id="schedule"></div>
+    <div id="location"></div>
+    <div id="faq"></div>
+    <div id="safety"></div>
+    <div id="policies"></div>
+    <div id="volunteers"></div>
+    <div id="newsletter"></div>
+    <div id="contact"></div>
+  </main>
+  <div id="footer"></div>
+
+  <script src="main.js"></script>
+  <script>
+    const components = [
+      { id: 'header', file: 'components/header.html' },
+      { id: 'hero', file: 'sections/hero.html' },
+      { id: 'about', file: 'sections/about.html' },
+      { id: 'mission', file: 'sections/mission.html' },
+      { id: 'programs', file: 'sections/programs.html' },
+      { id: 'schedule', file: 'sections/schedule.html' },
+      { id: 'location', file: 'sections/location.html' },
+      { id: 'faq', file: 'sections/faq.html' },
+      { id: 'safety', file: 'sections/safety.html' },
+      { id: 'policies', file: 'sections/policies.html' },
+      { id: 'volunteers', file: 'sections/volunteers.html' },
+      { id: 'newsletter', file: 'sections/newsletter.html' },
+      { id: 'contact', file: 'sections/contact.html' },
+      { id: 'footer', file: 'components/footer.html' }
+    ];
+    let loadedCount = 0;
+    components.forEach(comp => {
+      fetch(comp.file)
+        .then(res => {
+          if (!res.ok) throw new Error(`HTTP ${res.status} for ${comp.file}`);
+          return res.text();
+        })
+        .then(html => {
+          document.getElementById(comp.id).innerHTML = html;
+          loadedCount++;
+          if (loadedCount === components.length) {
+            document.dispatchEvent(new Event('componentsLoaded'));
+          }
+        })
+        .catch(err => {
+          console.error(`Error loading ${comp.file}:`, err);
+          document.getElementById(comp.id).innerHTML = `<div class="container" style="padding:2rem; text-align:center;">⚠️ Could not load ${comp.file}. Please check file paths.</div>`;
+          loadedCount++;
+        });
+    });
+    document.addEventListener('componentsLoaded', () => {
+      if (typeof initFaqAccordion === 'function') initFaqAccordion();
+      if (typeof initMobileNav === 'function') initMobileNav();
+      if (typeof initBackToTop === 'function') initBackToTop();
+    });
+  </script>
+  <noscript>
+    <div style="background:#f3f4f6; padding:1rem; text-align:center; border:1px solid #e5e7eb; margin:1rem;">
+      <strong>JavaScript is disabled.</strong> For the best experience, please enable JavaScript. Some features like FAQ toggles and form submission may not work.
+    </div>
+  </noscript>
+</body>
+</html>
