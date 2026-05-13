@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Autistic Figure Skating Club</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main class="section">
+    <div class="container">
+      <h3 class="section-title">Privacy Policy</h3>
+      <div class="card" style="max-width: 48rem; margin: 0 auto; text-align: left;">
+        <p>Your privacy is important to us. This policy explains how we handle your information.</p>
+        <h4 style="margin-top: 1.5rem; font-weight: 600;">Information We Collect</h4>
+        <p>When you use our contact form, we collect your name, email address, and message. We use this only to respond to you.</p>
+        <h4 style="margin-top: 1.5rem; font-weight: 600;">Photos & Videos</h4>
+        <p>By default, we do not take any photos or videos of skaters. If you would like photos or videos of yourself or your child, you must email us to request them.</p>
+        <h4 style="margin-top: 1.5rem; font-weight: 600;">Google Form</h4>
+        <p>Our optional club info form is hosted by Google Forms. Please review Google's privacy policy separately.</p>
+        <h4 style="margin-top: 1.5rem; font-weight: 600;">Data Sharing</h4>
+        <p>We never sell or share your personal information with third parties.</p>
+        <h4 style="margin-top: 1.5rem; font-weight: 600;">Contact Us</h4>
+        <p>Email: <a href="mailto:wen471942@gmail.com">wen471942@gmail.com</a><br>Phone: +1 (825) 983-8837</p>
+        <p style="margin-top: 1.5rem;">By participating in our club, you agree to this policy.</p>
+      </div>
+    </div>
+  </main>
+  <div id="footer"></div>
+  <script src="../main.js"></script>
+  <script>
+    fetch('../header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+</body>
+</html>
