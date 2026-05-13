@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - Autistic Figure Skating Club</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main class="section">
+    <div class="container">
+      <h3 class="section-title">Terms of Service</h3>
+      <div class="card" style="max-width: 48rem; margin: 0 auto; text-align: left;">
+        <p>Welcome to the Autistic Figure Skating Club! By participating in our activities, you agree to these terms.</p>
+        
+        <h4 style="margin-top: 1.5rem; font-weight: 600;">1. Code of Conduct</h4>
+        <p>Have Fun, But respect the rink. Treat all skaters, coaches, and families with kindness and inclusion.</p>
+        
+        <h4 style="margin-top: 1.5rem; font-weight: 600;">2. Safety</h4>
+        <p>All coaches hold First Aid Certificates. The ice is kept clear with no objects. Skaters skate at their own risk. Beginners (Canskate) MUST wear a helmet.</p>
+        
+        <h4 style="margin-top: 1.5rem; font-weight: 600;">3. Waiver</h4>
+        <p>This club is not a serious competitive organization – it's made for fun. There is no formal liability waiver. By showing up, you acknowledge that skating involves inherent risks, and you participate voluntarily.</p>
+        
+        <h4 style="margin-top: 1.5rem; font-weight: 600;">4. Attendance & Weather</h4>
+        <p>Coming to the rink or lessons is optional. Weather does not matter – we skate unless announced otherwise on the website or email.</p>
+        
+        <h4 style="margin-top: 1.5rem; font-weight: 600;">5. Photo/Video</h4>
+        <p>By default, no photos or videos are taken. If you want media of yourself or your child, you must email us to request it.</p>
+        
+        <h4 style="margin-top: 1.5rem; font-weight: 600;">6. Volunteer & Coaching</h4>
+        <p>Anyone can join as a coach, volunteer, or helper. Just show up on Tuesday or email us.</p>
+        
+        <h4 style="margin-top: 1.5rem; font-weight: 600;">7. Changes to Terms</h4>
+        <p>We may update these terms at any time. Continued participation means you accept the changes.</p>
+        
+        <h4 style="margin-top: 1.5rem; font-weight: 600;">Contact</h4>
+        <p>Email: <a href="mailto:wen471942@gmail.com">wen471942@gmail.com</a><br>Emergency Phone: +1 (825) 983-8837</p>
+      </div>
+    </div>
+  </main>
+  <div id="footer"></div>
+  <script src="../main.js"></script>
+  <script>
+    fetch('../header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+    fetch('../footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+</body>
+</html>
