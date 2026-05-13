@@ -38,12 +38,25 @@ All events are judged according to the **ISU judging system**, ensuring fairness
 ## Repository Structure
 ```
 Autistic-Skating-Group/
-├── index.html          # Main static website entry point
-├── assets/             # (future) images, CSS, JS
-├── music/              # MP3 files of competition music
-├── README.md           # This documentation
-├── LICENSE             # MIT License
-└── .gitignore          # Ignored files for the repo
+├── index.html # Main entry point (assembles all sections)
+├── styles.css # Full custom CSS (no frameworks)
+├── main.js # Interactivity (mobile nav, FAQ toggles, form handler)
+├── header.html # Navigation bar component
+├── footer.html # Footer component with credits
+├── sections/ # Individual page sections
+│ ├── hero.html
+│ ├── about.html
+│ ├── programs.html
+│ ├── schedule.html
+│ ├── faq.html
+│ └── contact.html
+├── pages/ # Standalone legal pages
+│ ├── privacy.html
+│ └── terms.html
+├── assets/ # (future) images, icons, etc.
+├── README.md
+├── LICENSE
+└── .gitignore
 ```
 
 Additional assets (photos, videos, PDFs) will be added as the project evolves.
